@@ -19,6 +19,5 @@ public class MyAspect {
 	@After("execution(* com.binary.spring.security.controller.*.*(..))")
 	public void printAfter(JoinPoint joinpoint) {
 		System.out.println("Method execution Ended " +joinpoint.getSignature());
-	}
-	
+	}	
 }
